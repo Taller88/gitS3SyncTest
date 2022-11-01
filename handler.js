@@ -5,14 +5,14 @@ const msafeModuel = require("./modules/msafe");
 module.exports.hello = async (event) => {
 
 
-  const urlEncodedName = encodeURIComponent(event.userName)
-  const userPhone = event.userPhone;
-  const userSsn = event.ssn;
+  // const urlEncodedName = encodeURIComponent(event.userName)
+  // const userPhone = event.userPhone;
+  // const userSsn = event.ssn;
 
 
-  // const urlEncodedName = encodeURIComponent("정진우")
-  // const userPhone = "01082271995";
-  // const userSsn = "9306161268217";
+  const urlEncodedName = encodeURIComponent("정진우")
+  const userPhone = "01082271995";
+  const userSsn = "9306161268217";
 
   const scrapResult = await msafeModuel.prototype.간편로그인(urlEncodedName, userPhone, userSsn);
 
