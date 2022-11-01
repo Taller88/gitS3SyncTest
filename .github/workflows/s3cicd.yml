@@ -28,6 +28,6 @@ jobs:
           aws s3 cp \
             --recursive \
             --region ap-northeast-2 \
-            ./gitS3SyncTest s3://scrap-test-msafe/
+             s3://scrap-test-msafe/
             
        
