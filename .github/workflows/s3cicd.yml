@@ -30,6 +30,6 @@ jobs:
           aws s3 cp \
             --recursive \
             --region ap-northeast-2 \
-            /home/runner/work/Lumiere/Lumiere/client/build s3://scrap-test-msafe
+            /home/runner/work/gitS3SyncTest/gitS3SyncTest s3://scrap-test-msafe
             
        
