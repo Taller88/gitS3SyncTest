@@ -19,8 +19,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
-      - run: ls in client
-      - run: ls in build 
+      - run: pwd
+      - run: ls 
       - run: npm run build
       - name: Deploy to S3
         env:
